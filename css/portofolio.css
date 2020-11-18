@@ -1,0 +1,153 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+/* main style */
+body {
+    font-family: Helvetica, sans-serif;
+}
+.top {
+    width: 100%;
+    height: 500px;
+    /* background-color: rgb(162, 171, 255); */
+    background-image: linear-gradient(to bottom right, rgb(135, 219, 102), rgba(175, 255, 192, 0.699));
+}
+
+.header {
+    padding-top: 30px;
+    padding-left: 100px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: rgb(119, 119, 241);
+}
+
+.header ul li {
+    display: inline-block;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+ul li .header-main {
+    font-size: 20px;
+}
+
+.header-second {
+    margin-left: 600px;
+}
+
+.header-second, .header-three, .header-four, .header-five {
+    font-size: 11px;
+}
+
+.container {
+    margin: auto;
+    margin-top: 80px;
+    top: 300px;
+    width: 900px;
+    height: 475px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px 8px rgba(7, 78, 19, 0.062);
+    display: flex;
+    box-sizing: border-box;
+}
+
+.photos {
+    flex: 60%;
+    padding: 15px;
+}
+
+.photos img {
+    height: 440px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.content {
+    flex: 40%;
+    /* background-color: pink; */
+    padding: 30px;
+    padding-top: 40px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(73, 73, 73);
+}
+
+.content .summ {
+    text-align: justify;
+}
+
+.prof {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.great, .prof, .summ {
+    margin-bottom: 10px;
+}
+
+p.great {
+    font-size: 10px;
+}
+
+h1, .prof {
+    line-height: 1.2;
+    color: black;
+}
+
+.contact {
+    display: flex;
+}
+
+.icon {
+    flex: 12%;
+}
+
+.calendar, .phone, .email, .home {
+    width: 20px;
+    padding: 5px;
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+
+.contact {
+    display: flex;
+}
+
+.icon-detail {
+    flex: 88%;
+    padding-top: 8px;
+}
+
+.icon-detail p {
+    margin-bottom: 18px;
+    font-size: 12px;
+}
+
+.summ {
+    font-size: 13px;
+    font-weight: lighter;
+}
+.sosmed {
+    border-top: 1px solid grey;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.sosmed li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.ig, .fb, .wa {
+    width: 30px;
+    opacity: 0.6;'
+}
