@@ -26,34 +26,39 @@ body {
     color: rgb(119, 119, 241);
 }
 
-.header ul li {
-    display: inline-block;
+.header .nav {
+    max-width: 100%;
+    display: flex;
+    flex: wrap;
 }
 
-.header ul li a {
+.header ul li {
+    /* display: inline-block; */
+    display: block;
+}
+
+.header .nav li a {
     text-decoration: none;
     color: white;
-    margin-right: 50px;
+    margin: 20px;
 }
 
-ul li .header-main {
+.nav .header-main {
     font-size: 20px;
-}
-
-.header-second {
-    margin-left: 600px;
+    flex: 8;
 }
 
 .header-second, .header-three, .header-four, .header-five {
     font-size: 11px;
+    flex: 1;
+    padding-top: 7px;
 }
 
 .container {
     margin: auto;
     margin-top: 80px;
     top: 300px;
-    width: 900px;
-    height: 475px;
+    width: 75%;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 2px 4px 8px rgba(7, 78, 19, 0.062);
@@ -67,7 +72,7 @@ ul li .header-main {
 }
 
 .photos img {
-    height: 440px;
+    width: 90%;
     border-radius: 10px;
     background-size: cover;
 }
@@ -135,7 +140,6 @@ h1, .prof {
 
 .summ {
     font-size: 13px;
-    font-weight: lighter;
 }
 .sosmed {
     border-top: 1px solid grey;
@@ -150,4 +154,23 @@ h1, .prof {
 .ig, .fb, .wa {
     width: 30px;
     opacity: 0.6;'
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .photos img {
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        margin-left: -90px;
+    }
 }
